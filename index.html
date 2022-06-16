@@ -1,0 +1,69 @@
+<input value="Maixm" title="Enter your name" class="first-name default-input" id="first-name" />
+<input value="Remez" class="last-name default-input" id="last-name" />
+<input value="Minsk" class="adress default-input" id="adress" />
+
+<select id="cities">
+    <option>Kiev</option>
+    <option>Minsk</option>
+    <option selected="selected">Moskow</option>
+</select>
+
+<textarea id="hobbies">JS, CSS, HTML</textarea>
+
+<div id="avatar-wrapper">
+    <img id="avatar"
+        src="https://sun1.beltelecom-by-minsk.userapi.com/Zbis5k3gPA0N4XemzV4DtWDVQX7cWdj8sY8gKg/SCxGN1WMcJA.png"
+        alt="Аватар" />
+</div>
+
+<script>
+    var firstNameId = "first-name";
+    var firstNameEl = document.getElementById(firstNameId);
+    var lastNameId = "last-name";
+    var lastNameEl = document.getElementById(lastNameId);
+    var adressId = "adress";
+    var adressEl = document.getElementById(adressId);
+    var citiesId = "cities";
+    var citiesEl = document.getElementById(citiesId);
+    var hobbiesId = "hobbies";
+    var hobbiesEl = document.getElementById(hobbiesId);
+    var avatarWrapperId = "avatar-wrapper";
+    var avatarWrapperEl = document.getElementById(avatarWrapperId);
+    var avatarId = "avatar";
+    var avatarEl = document.getElementById(avatarId);
+
+    firstNameEl.value = "Andrei";
+    lastNameEl.value = "Kamasutra";
+    lastNameEl.className = "last name default-input error-input";
+    avatarEl.src = "data:image/jpeg;base64,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";
+    avatarEl.title = "I'm avatar";
+    cities.value = "Minsk2";
+    hobbiesEl.value = "I've not interests";
+    avatarWrapperEl.innerHTML = "<ul id='list'><li>1</li><li>2</li></ul>";
+    var listId = "list";
+    var listEl = document.getElementById(listId);
+    window.alert(listEl.innerHTML);
+
+//window.alert(avatarEl.src);
+//window.alert(avatarEl.alt);
+//window.alert(citiesEl.innerHTML);
+//window.alert(avatarWrapperEl.innerHTML);
+//window.alert(hobbiesEl.innerHTML);
+//window.alert(hobbiesEl.value);
+//window.alert(citiesEl.value);
+//window.alert(firstNameEl.value);
+//window.alert(lastNameEl.value);
+//window.alert(adressEl.value);
+
+</script>
+
+<style>
+    .default-input {
+        border: green 3px solid;
+        padding: 5px;
+    }
+
+    .error-input {
+        border: red 3px solid;
+    }
+</style>
